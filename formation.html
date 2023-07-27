@@ -1,0 +1,271 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            background: url('px.png') ;
+            background-repeat: no-repeat;
+            background-color: black;
+            color: white;
+            padding-top:120px;
+           
+            
+            background-size: cover;
+          
+            
+        }
+        body.overlay::before {
+                content: "";
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.75); /* Couleur sombre avec une opacité de 0.5 */
+                z-index: -1; /* Assurez-vous que l'overlay est en arrière-plan */
+            }
+            .header {
+                height:100px;
+                background-color: black;
+                top:0;
+                position:fixed;
+                left:0;
+                right:0;
+            }
+            .footer {
+                margin-top:70px;
+           
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            height: 100px;
+            background-color: black;
+        }
+        h1 {
+            color: white;
+            font-size: 56px;
+            margin-top: 0px;
+            margin-bottom: 36px;
+            font-weight: 700
+        }
+
+        .green-text {
+            color: green;
+        }
+        .btn {
+            background-color: green;
+            color: white;
+            padding:20px;
+            border:none;
+            font-size:30px;
+            font-weight: bold;
+            font-family: Roboto , Arial;
+            width:300px;
+            cursor:pointer;
+
+
+        }
+        .btn1 {
+            background-color: green;
+            color: white;
+            padding:20px;
+            border:none;
+            font-size:30px;
+            font-weight: bold;
+            font-family: Roboto , Arial;
+            right:30px;
+            position:fixed;
+            cursor:pointer;
+            margin-top: 10px;;
+
+
+        }
+        .btn1:hover {
+            border:1px solid red;
+        }
+        .btn:hover {
+            border:1px solid red;
+            background-color: white;
+            color:black;
+
+        }
+        .btn2:hover {
+            border:1px solid red;
+            background-color: green;
+            color: white;
+        }
+        .btn2 {
+            background-color: whie;;
+            color: black;
+            padding:20px;
+            border:none;
+            font-size:30px;
+            font-weight: bold;
+            font-family: Roboto , Arial;
+            width:300px;
+            text-align: left;
+            display:block;
+            margin-top:30px;
+           cursor:pointer;
+            
+        }
+        .formations-category-title {
+            text-align: center;
+            font-size:40px;
+        }
+        .red-text {
+            color: red;
+        }
+        .author {
+            background-color: black;
+            color: white;
+            padding:20px;
+            border:none;
+            font-size:30px;
+            font-weight: bold;
+            font-family: Roboto , Arial;
+            left:0px;
+            position:fixed;
+            cursor:pointer;
+            text-decoration: none;
+            margin-top:-6px;
+            
+            
+
+        
+        }
+        .ptyh {
+            width:100%;
+
+        }
+        .formation-grid {
+            margin-top:12px;
+            display:flex;
+            background-color: azure;
+            border-radius: 5px;
+            column-gap: 30px;
+            padding-left:15px;
+            padding-right: 15px;
+            margin-left:41px;
+            margin-right:41px;
+           
+            
+        }
+        .image {
+            padding-top:10px;
+            padding-bottom:10px;
+            padding-left:0px;
+            width: 300px;
+            justify-items: center;
+            justify-content: center;
+        }
+        .infos {
+            flex:1
+
+        }
+        .description {
+            color:black;
+            font-size:20px
+        }
+
+    </style>
+</head>
+<body class="overlay">
+    <div class="header">
+        <button class="author"><a class="author" href="tchalim.html">CODER AVEC TCHALIM</a></button>
+        <button class="btn1 green-button" type="button" onclick="location.href='formation.html'">FORMATIONS</button>
+     
+        
+
+    </div>
+    <div class="main-header">
+        <div class="formations-category-title">Formations <span class="red-text">Python</span></div>
+        </div>
+            <div style="justify-content: center;">
+            <div class="formation-grid">
+                <div class="image">
+                    <img class="ptyh" src="pyt.png">
+                </div>
+                <div class="infos">
+                    <a href="https://bit.ly/3r07lG7">
+                        <p style="color:black; font-size:20px" target="_blank">Developpeur python</p>
+                        <div><img  src="rating-50.png"></div>
+                    </a>
+                        <p class="description">
+                            Formation complete pour apprendre la programmation avec le langage python et creer tous types de projets(site web applications web ou scriptde tests d'intrusion)
+                        </p>
+    
+                   
+                   
+                </div>
+                </div>
+
+
+                <div class="formation-grid">
+                    <div class="image">
+                        <img class="ptyh" src="frs.jpg">
+                    </div>
+                    <div class="infos">
+                        <a href="https://www.udemy.com/course/formation-web-full-stack-avec-djangopython-html-cssjs/learn/lecture/38771750#overview">
+                            <p style="color:black; font-size:20px">Developpeur Applications web</p>
+                            <div><img  src="rating-50.png"></div>
+                        </a>
+                            <p class="description">
+                                Formation web complète avec django, html, css, js et python : créez des applications web puissantes et interactives
+                            </p>
+        
+                       
+                       
+                    </div>
+        
+    
+    
+            </div>
+            
+        
+
+            </div>
+           <div class="footer">
+        <div style="display:inline-block">
+            <a style="margin-left:30px;color:white; font-size:20px;" href="tel:+22897858169">Nous contacter</a>
+
+        </div>
+        <br>
+        <div style="display:inline-block; margin-left:30px; margin-top:20px">
+          
+            <a href="https://wa.me/0022897858169" target="blank" style="margin-left:10px;color:white; font-size:20px;">Contacter via WhatsApp</a>
+
+
+        </div>
+        </body>
+       
+
+    </div>
+        
+</body>
+</html>
+
+
+
+
+
+
+
